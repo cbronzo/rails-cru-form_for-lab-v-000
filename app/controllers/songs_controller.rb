@@ -4,12 +4,13 @@ class SongsController < ApplicationController
     @songs = Song.all
   end
   
-   def show
-  end
-  
   def new
   end
   
+  def show
+  end
+  
+ 
   def edit
   end
 end
