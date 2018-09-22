@@ -23,5 +23,7 @@ class ArtistsController < ApplicationController
 	  redirect_to artist_path(@artist)
 	end
 	
-	
+	def artist_params
+			params.require(:artist).permit(:name, :bio)
+		end
 end
